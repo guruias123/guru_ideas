@@ -13,14 +13,14 @@ import Home_01 from "./components/Home_01";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/guru_ideas">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home_01 />} />
         </Routes>
       </BrowserRouter>
 
-    {/* <Home /> */}
+      {/* <Home /> */}
     </div>
   );
 }
